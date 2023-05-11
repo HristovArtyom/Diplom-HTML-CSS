@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Bhromaon</title>
+</head>
+<body>
+  <!-- header section  -->
+  <header class="header">
+    <div class="container">
+      <div class="heading">
+        <h1 class="heading__h1">Bhromaon</h1>
+        <p class="heading__subtitle">Safe Travel Anywhere</p>
+        <form class="form">
+          <input type="text" name="search" class="form__input" placeholder="Search Your Travel Destination">
+          <button class="form__input--btn" type="submit">
+            <svg class="search__svg">
+              <use class="search__svg--fill" href="images/sprite.svg#search" />
+            </svg>
+            <p class="search__text">Search</p>
+          </button>
+        </form>        
+        <a href="#nav" class="scroll__link">Scroll down
+          <div class="scroll">
+            <svg class="scroll__svg">
+              <use class="scroll__svg--fill" href="images/sprite.svg#down" />
+            </svg>
+            <svg class="scroll__svg scroll__svg--second">
+              <use class="scroll__svg--fill" href="images/sprite.svg#down" />
+            </svg>
+            <svg class="scroll__svg  scroll__svg--third">
+              <use class="scroll__svg--fill" href="images/sprite.svg#down" />
+            </svg>
+          </div> 
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- navigation section -->
+    <section class="nav__section"  id="nav">
+      <div class="container">
+        <div class="navigation">
+          <a href="" class="logo">
+            <img src="images/logo.svg" alt="">
+          </a>
+          <nav  id="nav__responsive" class="nav nav_resp">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#who" class="nav__link">Who We Are</a>
+              </li>
+              <li class="nav__item">
+                <a href="#what" class="nav__link">What We Do</a>
+              </li>
+              <li class="nav__item">
+                <a href="#travel" class="nav__link">Travel With Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact Us</a>
+              </li>
+            </ul>
+            <div class="burger__menu"  onclick="myFunction()">
+              <span class="burger__menu--line"></span>
+              <span class="burger__menu--line"></span>
+              <span class="burger__menu--line"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- choose section  -->
+    <section class="choose__section" id="who">
+      <div class="container">
+        <div class="choose">
+          <div class="choose__text">
+            <h2 class="heading__h2">Why Choose Us</h2>
+            <p class="choose__subtitle choose__subtitle--mrg">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
+            <p class="choose__subtitle">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+            <button class="choose__btn btn__color">Explore Places</button>
+          </div>
+          <div class="choose__img">
+            <div class="choose__image">
+              <img class="choose__img--png" src="images/choose-img1.png" alt="">
+            </div>
+            <div class="choose__image">
+              <img class="choose__img--png" src="images/choose-img2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- steps section -->
+    <section class="steps__section" id="what">
+      <div class="container">
+        <div class="steps">
+          <svg class="steps__svg">
+            <use class="steps__svg--fill" href="images/sprite.svg#search-big" />
+          </svg>
+          <div class="line">
+            <div class="line__text"></div>
+          </div>
+          <svg class="steps__svg">
+            <use class="steps__svg--fill" href="images/sprite.svg#check" />
+          </svg>
+          <div class="line">
+            <div class="line__text"></div>
+          </div>
+          <svg class="steps__svg">
+            <use class="steps__svg--fill" href="images/sprite.svg#thumbs" />
+          </svg>
+        </div>
+        <div class="steps__text">
+          <p class="steps__text--subtitle">Search Places</p>
+          <p class="steps__text--subtitle">Select Places</p>
+          <p class="steps__text--subtitle">Book &amp; Enjoy</p>
+        </div>
+      </div>
+    </section>
+    <!-- book section -->
+    <section class="book__section book__section--img" id="travel">
+      <div class="container">
+        <div class="book">
+          <h6 class="heading__h6">Spain</h6>
+          <h5 class="heading__h5">Grand Spain Madrid</h5>
+          <p class="book__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+          <button class="book__btn btn__color">book now</button>
+        </div>
+      </div>
+    </section>
+    <!-- book section -->
+    <section class="book__section book__section--img-sec">
+      <div class="container">
+        <div class="book book__second">
+          <h6 class="heading__h6">Spain</h6>
+          <h5 class="heading__h5">Grand Spain Madrid</h5>
+          <p class="book__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+          <button class="book__btn btn__color">book now</button>
+        </div>
+      </div>
+    </section>
+    <!-- feedback section -->
+    <section class="feedback__section">
+      <div class="container">
+        <div class="feedback">
+          <h2 class="heading__h2">What Our  Tourists Say</h2>
+          <div class="feedback__user">
+              <img class="feedback__img" src="images/tourist-img.png" alt="">
+            <div class="feedback__user--text">
+              <h5 class="heading__h5">Sam Sumon</h5>
+              <span class="quote">
+                <svg class="quote__svg" width="20" height="20">
+                  <use class="quote__svg--fill" href="images/sprite.svg#quote-left" />
+                </svg>
+              </span>
+              <p class="feedback__user--text-subtitle">
+                But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__content">
+          <h3 class="heading__h3">Bhromaon</h3>
+          <p class="footer__text">Safe Travel Anywhere</p>
+          <div class="footer__social">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <svg class="footer__svg" width="20" height="32">
+                    <use class="footer__svg--fill" href="images/sprite.svg#fb" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <svg class="footer__svg" width="32" height="26">
+                    <use class="footer__svg--fill" href="images/sprite.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <svg class="footer__svg" width="28" height="28">
+                    <use class="footer__svg--fill" href="images/sprite.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <svg class="footer__svg" width="34" height="24">
+                    <use class="footer__svg--fill" href="images/sprite.svg#youtube" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <svg class="footer__svg" width="31" height="31">
+                    <use class="footer__svg--fill" href="images/sprite.svg#pinterest" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>  
+  <!-- script -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav__responsive");
+      if (x.className === "nav nav_resp") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav nav_resp";
+      }
+    }
+    </script>
+</body>
+</html>
