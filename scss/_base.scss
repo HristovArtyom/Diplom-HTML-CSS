@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}

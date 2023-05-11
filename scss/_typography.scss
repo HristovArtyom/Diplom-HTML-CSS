@@ -1,0 +1,125 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.heading {
+  text-align: center;
+  &__h1 {
+    @include font-style (700, 48, 52);
+    text-transform: uppercase;
+  }
+
+  &__h2 {
+    @include font-style (400, 36, 40);
+    font-family: $second-font;
+    text-transform: capitalize;
+  }
+
+  &__h3 {
+    @include font-style (700, 24, 28);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__h5 {
+    @include font-style (400, 20, 28);
+    text-transform: uppercase;
+  }
+
+  &__h6 {
+    @include font-style (300, 20, 28);
+    letter-spacing: 0.1em;
+  }
+
+  &__subtitle {
+    @include font-style (400, 22, 28);
+    letter-spacing: 0.31em;
+  }
+}
+
+.form {
+  &__input {
+    @include font-style (400, 14, 20, $grey);
+    font-family: $main-font;
+    letter-spacing: 0.2em;
+
+    &::placeholder {
+      @include font-style (400, 14, 20, $grey);
+      font-family: $main-font;
+      letter-spacing: 0.2em;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  
+    &--btn {
+      @include font-style (400, 14, 20);
+      font-family: $second-font;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.nav__link {
+  @include font-style (400, 14, 20);
+  font-family: $second-font;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.choose {
+  &__subtitle {
+    @include font-style (300, 16, 28);
+    letter-spacing: 0.1em;
+  }
+  
+  &__btn {
+    @include font-style (400, 16, 20);
+    font-family: $second-font;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+}
+
+.book {
+  &__text {
+    @include font-style (300, 16, 28);
+    letter-spacing: 0.1em;
+  }
+
+  &__btn {
+    @include font-style (400, 16, 20);
+    font-family: $second-font;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+}
+
+.feedback__user--text-subtitle {
+  @include font-style (300, 16, 28);
+  letter-spacing: 0.1em;
+}
+
+.footer__text {
+  @include font-style (400, 14, 20);
+  letter-spacing: 0.2em;
+}
+
+.steps__text {
+  &--subtitle {
+    @include font-style (400, 36, 40);
+    font-family: $second-font;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.scroll__link {
+  @include font-style (400, 14, 20);
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: $white;
+}
